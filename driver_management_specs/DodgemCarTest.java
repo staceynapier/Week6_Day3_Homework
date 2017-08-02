@@ -4,16 +4,16 @@ import driver_management.*;
 
 public class DodgemCarTest {
 
-  DodgemCar car
+  DodgemCar car;
 
   @Before
   public void before() {
-    car = new DodgemCar();
+    car = new DodgemCar(10);
   }
 
   @Test
   public void driveDistanceReturnsTime() {
-    assertEquals(100, car.driveDistance() );
+    assertEquals(1, car.driveDistance(10) );
   }
 
 }
