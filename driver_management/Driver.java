@@ -20,7 +20,7 @@ public class Driver{
   }
 
   public int driveTime(int distance) {
-    return distance/this.averageSpeed;
+    return this.ride.driveTime(distance);
   }
 
 }
